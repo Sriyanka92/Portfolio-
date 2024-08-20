@@ -1,0 +1,168 @@
+#skill {
+    overflow: hidden;
+    width: 100%;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 1rem; /* Added padding for better spacing */
+    box-sizing: border-box;
+}
+
+.skillTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100%;
+    max-width: 80%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.skillBar {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(3, 3, 48);
+    align-items: center;
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+
+.skillBarText>h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.aboutHeader {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 77%;
+    justify-content: space-between;
+    background: rgb(3, 3, 48);
+    margin: 1rem 0;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.aboutOne, .aboutTwo {
+    font-weight: 300;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.aboutTwo {
+    margin-right: 0; /* Remove right margin on the last item */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skillTitle, .aboutHeader {
+        font-size: 2rem;
+    }
+
+    .skillDesc {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .skillBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+    }
+
+    .skillBarImg {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .skillBarText>h2 {
+        font-size: 1.1rem;
+    }
+
+    .skillBarText>p {
+        font-size: 0.85rem;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .aboutOne, .aboutTwo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skillTitle, .aboutHeader {
+        font-size: 1.75rem;
+    }
+
+    .skillDesc {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .skillBar {
+        padding: 1rem;
+    }
+
+    .skillBarText>h2 {
+        font-size: 1rem;
+    }
+
+    .skillBarText>p {
+        font-size: 0.8rem;
+    }
+
+    .aboutMe {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .aboutOne, .aboutTwo {
+        margin-bottom: 0.75rem;
+    }
+}

@@ -1,0 +1,108 @@
+#contact {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.contactPageTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactDesc {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    max-width: 40rem;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+    padding: 0 1rem;
+}
+
+.name, .email, .msg, .subject {
+    font-size: medium;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    background: rgb(3, 3, 48);
+    box-sizing: border-box;
+}
+
+.submitBtn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactPageTitle {
+        font-size: 2rem;
+    }
+
+    .contactForm {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .name, .email, .msg, .subject {
+        font-size: medium;
+        padding: 0.75rem;
+    }
+
+    .submitBtn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactPageTitle {
+        font-size: 1.75rem;
+    }
+
+    .contactDesc {
+        font-size: 0.9rem;
+    }
+
+    .name, .email, .msg, .subject {
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    .submitBtn {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+    }
+}
